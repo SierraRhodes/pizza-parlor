@@ -71,19 +71,20 @@
         Size of Pizza
         <br>
         <br>
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Size Options</option>
-          <option name="size" value="1">Small</option>
-          <option name="size" value="2">Medium</option>
-          <option name="size" value="3">Large</option>
+        <select class="form-select" name="size" aria-label="Default select example">
+          <option value="size-option">Size Options</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
         </select> 
       </div>
       <div class="col">
         Your Total
-        <p id="total-cosst">$0.00</p>
+        <p id="total-cost">$0.00</p>
         <br>
         <br>
-        <button type="submit">Order Pizza</button>
+        <button id="form-submit" type="submit">Order Pizza</button>
+        <h4></h4>
       </div>
     </div>
   </form>

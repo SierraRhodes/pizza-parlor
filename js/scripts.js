@@ -12,15 +12,16 @@ Pizza.prototype.cost = function() {
  const standardCosts = {
   Small: 5,
   Medium: 8,
-  Large: 14
+  Large: 14,
  };
 
 const toppingCostPerTopping = 1;
 
 const standardCost = standardCosts[this.size];
 const toppingCost = toppingCostPerTopping * this.toppings.length;
-
-return standardCost * toppingCost;
+console.log("Standard Cost:", standardCost);
+console.log("Topping Cost:", toppingCost);
+return standardCost + toppingCost;
 };
 
 const ToppingOptions = [
@@ -36,17 +37,37 @@ const ToppingOptions = [
 ];
 
 //UI Logic 
+console.log("Calculating cost for:", this.size, this.toppings);
+function updateCost() {
+  const checkboxes = document.querySelectorAll("input[type=checkbox][name=toppings]:checked");
+  const toppings = Array.from(checkboxes).map(cb => cb.value);
+  const size = document.querySelector("select[name=size]").value;
+  pizza.toppings = toppings;
+  pizza.size = size;
+  console.log("Toppings:", pizza.toppings);
+  console.log("Size:", pizza.size);
+  const cost = parseFloat(pizza.cost().toFixed(2));
+  document.querySelector("#total-cost").textContent = "$" + cost;
+ }
 
 
 
-
-
-window.addEventListener("load", function(event) {
-
-const form = document.getElementById("pizza-form");
-const total = document.getElementById("total-cost");
-form.addEventListener("submit", function(event) {
- event.preventDefault();
+ window.addEventListener("load", function(event) {
+  const form = document.getElementById("pizza-form");
+  // Update cost when page loads
+  updateCost();
+  // updateCost() changes event of the inputs
+  form.addEventListener("change", function(event) {
+    updateCost();
+  });
+  
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.querySelector("h4").innerText = "Your order has been placed, but be aware it'll never be delivered. :)";
+    document.getElementById("pizza-form").reset();
+  });
 });
 
-});
+
+
+
