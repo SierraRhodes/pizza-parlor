@@ -10,6 +10,82 @@
   <title>Pizza Parlor</title>
 </head>
 <body>
-  <h1>Bits'n Pieces Pizza Parlor</h1>
+  <form id="pizza-form">
+    <h1>Bits'n Pieces Pizza Parlor</h1>
+    <p> Welcome! Begin with choosing your toppings and size of your pizza. </p>
+    <div class="row align-items-center">
+      <div class="col">
+        Select Your Toppings!
+        <br>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name= "toppings" value="Pepperoni" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Pepperoni 
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="toppings" value="Sausage" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Sausage
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="toppings" value="Ham" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Ham
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="toppings" value="Banana Peppers" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Banana Peppers
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="toppings" value="Green Peppers" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Green Peppers
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="toppings" value="Spinach" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Spinach
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name= "toppings" value="Mushrooms" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Mushrooms
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name= "toppings" value="Cheese" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Cheese
+          </label>
+        </div>
+      </div>
+      <div class="col">
+        Size of Pizza
+        <br>
+        <br>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Size Options</option>
+          <option name="size" value="1">Small</option>
+          <option name="size" value="2">Medium</option>
+          <option name="size" value="3">Large</option>
+        </select> 
+      </div>
+      <div class="col">
+        Your Total
+        <p id="total-cosst">$0.00</p>
+        <br>
+        <br>
+        <button type="submit">Order Pizza</button>
+      </div>
+    </div>
+  </form>
 </body>
 </html>
