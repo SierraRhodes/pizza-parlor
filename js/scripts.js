@@ -65,6 +65,7 @@ function updateCost() {
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     document.querySelector("h4").innerText = "Your order has been placed, but be aware it'll never be delivered. :)";
+    document.querySelector("#total-cost").textContent =  "$" + 0;
     document.getElementById("pizza-form").reset();
   });
 });

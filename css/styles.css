@@ -1,37 +1,47 @@
-/* .col-4 {
-  
-} */
+
+ body {
+  background: #c1b996 !important;
+
+ }
 
 h1 {
-  text-align: center;
+  background-color: #a84064;
   padding: 5%;
-
+  text-align: center;
+ 
 }
 
-/* .form-select {
-
-} */
+h2 {
+  background-image: url("../img/pizza3.png");
+  padding: 8%;
+  
+}
 
 p {
-  text-align: center;
-  padding-top: 3%;
+  background-color: whitesmoke;
   padding-bottom: 5%; 
+  padding-top: 3%;
+  text-align: center;
 
 }
 
 #size-pizza {
-border: 2px solid black;
+background-color: #DFD5BA;
+border: 2px solid #e98f0f;
 margin-bottom: 10%;
 padding-bottom: 5%;
 text-align: center;
+
 }
 
 #toppings-pizza {
-  border: 2px solid black;
+  background-color: #DFD5BA;
+  border: 2px solid #e98f0f;
 }
 
 #cost-pizza {
-  border: 2px solid black;
+  background-color: #DFD5BA;
+  border: 2px solid #e98f0f;
   margin-top: 1%;
   text-align: center;
 
