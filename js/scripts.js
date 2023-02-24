@@ -10,9 +10,10 @@ function Pizza(toppings, size) {
 
 Pizza.prototype.cost = function() {
  const standardCosts = {
-  Small: 5,
-  Medium: 8,
-  Large: 14,
+  sizeOptions: 0,
+  small: 5,
+  medium: 8,
+  large: 14,
  };
 
 const toppingCostPerTopping = 1;
