@@ -4,6 +4,7 @@
 
 h1 {
   text-align: center;
+  padding: 5%;
 
 }
 
@@ -12,6 +13,27 @@ h1 {
 } */
 
 p {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 5%; 
+
+}
+
+#size-pizza {
+border: 2px solid black;
+margin-bottom: 10%;
+padding-bottom: 5%;
+text-align: center;
+}
+
+#toppings-pizza {
+  border: 2px solid black;
+  /* padding-top: 1%; */
+}
+
+#cost-pizza {
+  border: 2px solid black;
+  margin-top: 1%;
   text-align: center;
 
 }
