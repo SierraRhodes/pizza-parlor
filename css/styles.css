@@ -1,4 +1,9 @@
 
+ @font-face {
+  font-family: "little-face";
+  src: url("../little-face/LittleFaceBlack.ttf");
+}
+ 
  body {
   background: #c1b996 !important;
 
@@ -6,6 +11,8 @@
 
 h1 {
   background-color: #a84064;
+  font-family: "little-face" !important;
+  font-size: 80px;
   padding: 5%;
   text-align: center;
  
@@ -17,8 +24,12 @@ h2 {
   
 }
 
-p {
+#introduction {
   background-color: whitesmoke;
+
+}
+
+p {
   padding-bottom: 5%; 
   padding-top: 3%;
   text-align: center;
