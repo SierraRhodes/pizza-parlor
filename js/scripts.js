@@ -20,22 +20,8 @@ const toppingCostPerTopping = 1;
 
 const standardCost = standardCosts[this.size];
 const toppingCost = toppingCostPerTopping * this.toppings.length;
-console.log("Standard Cost:", standardCost);
-console.log("Topping Cost:", toppingCost);
 return standardCost + toppingCost;
 };
-
-const ToppingOptions = [
-  {name: "Pepperoni", price: 1 },
-  {name: "Sausage", price: 1 },
-  {name: "Ham", price: 1 },
-  {name: "Banana Peppers", price: 1 },
-  {name: "Green Peppers", price: 1 },
-  {name: "Spinach", price: 1 },
-  {name: "Mushrooms", price: 1 },
-  {name: "Cheese", price: 1 },
-
-];
 
 //UI Logic 
 console.log("Calculating cost for:", this.size, this.toppings);
@@ -45,8 +31,6 @@ function updateCost() {
   const size = document.querySelector("select[name=size]").value;
   pizza.toppings = toppings;
   pizza.size = size;
-  console.log("Toppings:", pizza.toppings);
-  console.log("Size:", pizza.size);
   const cost = parseFloat(pizza.cost().toFixed(2));
   document.querySelector("#total-cost").textContent = "$" + cost;
  }
