@@ -2,6 +2,7 @@
  @font-face {
   font-family: "little-face";
   src: url("../little-face/LittleFaceBlack.ttf");
+
 }
  
  body {
@@ -26,7 +27,12 @@ h2 {
 
 #introduction {
   background-color: whitesmoke;
-
+  border: 5px solid #a84064;
+  border-radius: 50%;
+  border-style: groove;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+ 
 }
 
 p {
@@ -39,6 +45,7 @@ p {
 #size-pizza {
 background-color: #DFD5BA;
 border: 2px solid #e98f0f;
+
 margin-bottom: 10%;
 padding-bottom: 5%;
 text-align: center;
@@ -48,12 +55,13 @@ text-align: center;
 #toppings-pizza {
   background-color: #DFD5BA;
   border: 2px solid #e98f0f;
+
 }
 
 #cost-pizza {
   background-color: #DFD5BA;
   border: 2px solid #e98f0f;
-  margin-top: 1%;
+  /* margin-top: 1%; */
   text-align: center;
 
 }
